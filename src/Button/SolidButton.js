@@ -1,30 +1,24 @@
-import React from 'react';
-import styled from 'styled-components';
-import theme from '../theme';
-import Button, { StyledButton, ButtonBody } from './BaseButton';
+import React from 'react'
+import styled from 'styled-components'
+import theme from '../theme'
+import Button, { StyledButton, ButtonBody } from './BaseButton'
 
 // outline styles
 const StyledSolidButton = styled(StyledButton)`
   & {
     color: var(--contrast-color);
-    ${'' /* background: var(--main-color); */}
-    background: #FFF;
+    background: var(--main-color);
     z-index: 0;
     transition: all 0.15s ease;
   }
 
   &:hover {
     text-decoration: inherit;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  }
-
-  &:hover::before {
-    opacity: 0.9;
+    background: var(--hover-color);
   }
 
   &:active {
-    box-shadow: none;
-    background: #000;
+    background: var(--active-color);
   }
 
   &::before {
@@ -37,10 +31,13 @@ const StyledSolidButton = styled(StyledButton)`
     z-index: 1;
     height: 100%;
     width: 100%;
-    background: var(--main-color);
     pointer-events: none;
   }
-`;
+
+  &:disabled {
+    background: var(--disabled-color);
+  }
+`
 
 const SolidButton = React.forwardRef(
   ({ children, icon, iconpos, ...props }, ref) => {
@@ -48,16 +45,16 @@ const SolidButton = React.forwardRef(
       <StyledSolidButton {...props} ref={ref}>
         <ButtonBody icon={icon} iconpos={iconpos} children={children} />
       </StyledSolidButton>
-    );
+    )
   }
-);
+)
 
 SolidButton.defaultProps = {
   ...Button.defaultProps,
   borderRadius: 1,
   boxShadow: 1,
-};
+}
 
-export { StyledSolidButton };
+export { StyledSolidButton }
 
-export default SolidButton;
+export default SolidButton

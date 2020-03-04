@@ -48,11 +48,21 @@ cd rimble-ui && yarn
 git checkout codefi
 ```
 
-3. Start storybook
+4. Start rollup to recompile the components on change
+
+```bash
+yarn start
+```
+
+5. Start storybook
+
+Open a new terminal session to the sam base directory of the repo.
 
 ```bash
 cd storybook && yarn && yarn storybook
 ```
+
+You should get a new browser window that shows the storybook of all the components.
 
 ## License
 

@@ -1,26 +1,44 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { buttonStyle, variant, style } from 'styled-system';
-import { StyledBox } from '../Box';
-import Icon from '../Icon';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { buttonStyle, variant, style } from 'styled-system'
+import { StyledBox } from '../Box'
+import Icon from '../Icon'
 
 const buttonSize = variant({
   prop: 'size',
   key: 'buttonSizes',
-});
+})
 
 const mainColor = style({
   prop: 'mainColor',
   cssProperty: '--main-color',
   key: 'colors',
-});
+})
 
 const contrastColor = style({
   prop: 'contrastColor',
   cssProperty: '--contrast-color',
   key: 'colors',
-});
+})
+
+const hoverColor = style({
+  prop: 'hoverColor',
+  cssProperty: '--hover-color',
+  key: 'colors',
+})
+
+const activeColor = style({
+  prop: 'activeColor',
+  cssProperty: '--active-color',
+  key: 'colors',
+})
+
+const disabledColor = style({
+  prop: 'disabledColor',
+  cssProperty: '--disabled-color',
+  key: 'colors',
+})
 
 const StyledButton = styled(StyledBox)`
   & {
@@ -76,13 +94,16 @@ const StyledButton = styled(StyledBox)`
 
   ${mainColor}
   ${contrastColor}
+  ${hoverColor}
+  ${activeColor}
+  ${disabledColor}
   ${buttonStyle}
   ${buttonSize}
-`;
+`
 
 StyledButton.defaultProps = {
   as: 'button',
-};
+}
 
 const ButtonBody = ({ children, icon, iconpos }) => {
   if (icon) {
@@ -93,15 +114,15 @@ const ButtonBody = ({ children, icon, iconpos }) => {
         {children && <span className="button-text" children={children} />}
         {icon && iconpos == 'right' && <Icon name={icon} />}
       </React.Fragment>
-    );
+    )
   } else {
-    return <span className="button-text" children={children} />;
+    return <span className="button-text" children={children} />
   }
-};
+}
 
 const Button = React.forwardRef((props, ref) => {
-  return <StyledButton {...props} ref={ref} />;
-});
+  return <StyledButton {...props} ref={ref} />
+})
 
 Button.defaultProps = {
   // base props
@@ -117,10 +138,13 @@ Button.defaultProps = {
   // color props
   color: 'white',
   bg: 'silver',
-  mainColor: 'primary',
+  mainColor: 'primary700',
   contrastColor: 'white',
+  hoverColor: 'primary800',
+  activeColor: 'primary900',
+  disabledColor: 'primary400',
   border: 'none',
-};
+}
 
 Button.propTypes = {
   /**
@@ -135,6 +159,18 @@ Button.propTypes = {
    * Sets text color of button
    */
   contrastColor: PropTypes.string,
+  /**
+   * Sets background color on hover of button
+   */
+  hoverColor: PropTypes.string,
+  /**
+   * Sets background color when active of button
+   */
+  activeColor: PropTypes.string,
+  /**
+   * Sets background color when button is disabled
+   */
+  disabledColor: PropTypes.string,
   /**
    * Sets font and spacing size of button
    */
@@ -151,10 +187,10 @@ Button.propTypes = {
    * Sets padding on button with icon and no text
    */
   icononly: PropTypes.bool,
-};
+}
 
-Button.displayName = 'Button';
+Button.displayName = 'Button'
 
-export { StyledButton, ButtonBody };
+export { StyledButton, ButtonBody }
 
-export default Button;
+export default Button

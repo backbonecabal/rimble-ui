@@ -1,5 +1,5 @@
-import { create } from '@storybook/theming';
-import logotype from './../static/rimble-logotype.svg';
+import { create } from '@storybook/theming'
+import logotype from './../static/rimble-logotype.svg'
 
 export default create({
   base: 'light',
@@ -32,7 +32,7 @@ export default create({
   // inputTextColor: 'black',
   // inputBorderRadius: 4,
 
-  brandTitle: 'Rimble UI',
-  brandUrl: '//rimble.consensys.design',
-  brandImage: logotype,
-});
+  brandTitle: 'Codefi',
+  brandUrl: '',
+  brandImage: '',
+})
