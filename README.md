@@ -26,6 +26,34 @@ class Example extends Component {
 }
 ```
 
+## Develop components
+
+This is a port of `rimble-ui`. We are in the process of moving these components into a monorepo and adding TypeScript. Please reach out on #rimble-design-system in Slack for updates.
+
+1. Clone repo
+
+```bash
+git clone git@github.com:MikeLockz/rimble-ui.git // this will change soon
+```
+
+2. Navigate into repo and install dependencies
+
+```bash
+cd rimble-ui && yarn
+```
+
+3. Checkout codefi branch
+
+```bash
+git checkout codefi
+```
+
+3. Start storybook
+
+```bash
+cd storybook && yarn && yarn storybook
+```
+
 ## License
 
 MIT © [ConsenSys](https://github.com/ConsenSys)
