@@ -40,6 +40,18 @@ const disabledColor = style({
   key: 'colors',
 })
 
+const outlineHoverColor = style({
+  prop: 'outlineHoverColor',
+  cssProperty: '--outline-hover-color',
+  key: 'colors',
+})
+
+const outlineActiveColor = style({
+  prop: 'outlineActiveColor',
+  cssProperty: '--outline-active-color',
+  key: 'colors',
+})
+
 const StyledButton = styled(StyledBox)`
   & {
     -webkit-font-smoothing: antialiased;
@@ -97,6 +109,8 @@ const StyledButton = styled(StyledBox)`
   ${hoverColor}
   ${activeColor}
   ${disabledColor}
+  ${outlineHoverColor}
+  ${outlineActiveColor}
   ${buttonStyle}
   ${buttonSize}
 `
@@ -127,23 +141,28 @@ const Button = React.forwardRef((props, ref) => {
 Button.defaultProps = {
   // base props
   position: 'relative',
-  height: '3rem',
-  minWidth: '3rem',
-  px: 4,
-  py: 0,
+  // height: '3rem', // why set a height vs y-pad?
+  // minWidth: '3rem', // do we need this?
+  px: 4, // shouldn't this come from the theme? // New theme SPACE property messed this up
+  // py: 0, // shouldn't this come from the theme buttonSize variant?
   fontSize: 'inherit',
   fontFamily: 'sansSerif',
-  fontWeight: 3,
+  fontWeight: 'body', // use an alias vs array index
   lineHeight: 1,
   // color props
   color: 'white',
-  bg: 'silver',
-  mainColor: 'primary700',
-  contrastColor: 'white',
-  hoverColor: 'primary800',
-  activeColor: 'primary900',
-  disabledColor: 'primary400',
+  bg: 'base700',
+  // mainColor: 'primary700',
+  // contrastColor: 'white',
+  // hoverColor: 'primary800',
+  // activeColor: 'primary900',
+  // disabledColor: 'primary400',
+
   border: 'none',
+  outlineHoverColor: 'primary200',
+  outlineActiveColor: 'primary300',
+  size: 'medium',
+  variant: 'primary', // does this work?
 }
 
 Button.propTypes = {
@@ -171,6 +190,14 @@ Button.propTypes = {
    * Sets background color when button is disabled
    */
   disabledColor: PropTypes.string,
+  /**
+   * Sets background color on hover of outline button
+   */
+  outlineHoverColor: PropTypes.string,
+  /**
+   * Sets background color when active of outline button
+   */
+  outlineActiveColor: PropTypes.string,
   /**
    * Sets font and spacing size of button
    */
