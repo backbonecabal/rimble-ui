@@ -84,7 +84,7 @@ const theme = {
   // does it make sense to use direct values?
   // When would we use a space index?
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
-  fontWeights: [0, 400, 500, 700],
+  fontWeights: [0, 400, 500, 600],
   letterSpacings: [0, 1, 2, 4, 8],
   lineHeights: {
     solid: 1,
@@ -141,102 +141,6 @@ const theme = {
       borderColor: blue.base,
     },
   },
-  buttons: {
-    primary: {
-      // color: baseColors.white, // are these not used anymore?
-      // backgroundColor: primaryColors.primary700, // are these not used anymore?
-      // use css custom props
-      '--main-color': primaryColors.primary700, // I don't really love the way we need to type the same name, colors, and name again when using color values. Is there a shorter way?
-      // It is nice to be able to shortcut to "primary800" when using the color as a prop value via SS - but here the names feel repetitive
-      // Kick the can down the road on color name grouping?
-      '--contrast-color': brandColors.white,
-      '--hover-color': primaryColors.primary800, // added explicit definitions for all these state values.
-      '--active-color': primaryColors.primary900,
-      '--disabled-color': primaryColors.primary400,
-      '--outline-hover-color': primaryColors.primary200,
-      '--outline-active-color': primaryColors.primary300,
-    },
-    base: {
-      // use css custom props
-      '--main-color': baseColors.base700,
-      '--contrast-color': brandColors.white,
-      '--hover-color': baseColors.base800,
-      '--active-color': baseColors.base900,
-      '--disabled-color': baseColors.base400,
-      '--outline-hover-color': baseColors.base200,
-      '--outline-active-color': baseColors.base300,
-    },
-    success: {
-      '--main-color': successColors.success700,
-      '--contrast-color': brandColors.white,
-      '--hover-color': successColors.success800,
-      '--active-color': successColors.success900,
-      '--disabled-color': successColors.success400,
-      '--outline-hover-color': successColors.success200,
-      '--outline-active-color': successColors.success300,
-    },
-    danger: {
-      '--main-color': errorColors.error700,
-      '--contrast-color': brandColors.white,
-      '--hover-color': errorColors.error800,
-      '--active-color': errorColors.error900,
-      '--disabled-color': errorColors.error400,
-      '--outline-hover-color': errorColors.error200,
-      '--outline-active-color': errorColors.error300,
-    },
-    warning: {
-      '--main-color': warningColors.warning700,
-      '--contrast-color': brandColors.white,
-      '--hover-color': warningColors.warning800,
-      '--active-color': warningColors.warning900,
-      '--disabled-color': warningColors.warning400,
-      '--outline-hover-color': warningColors.warning200,
-      '--outline-active-color': warningColors.warning300,
-    },
-  },
-  buttonSizes: {
-    small: {
-      // fontSize: '0.75rem', // is this caclulated from the base font-size?
-      // height: '2rem', // shouldn't we do this via padding vs height? Icons?
-      // minWidth: '2rem', // why do we need a min width?
-      // padding: '0 1rem', // why not use theme value?
-      // REFACTORED VALUES
-      fontSize: 'small',
-      lineHeight: '1.25rem', // how many pixels is this?
-      paddingLeft: '1rem', // relative to 14px base
-      paddingRight: '1rem',
-      height: '2rem',
-      // We don't want to use top/bottom padding because Icons will bust our line-height
-      // paddingTop: '.625rem',
-      // paddingBottom: '.625rem',
-    },
-    medium: {
-      // is this even valid size? Can we default size to 'medium'?
-      // fontSize: '1rem',
-      // height: '3rem',
-      // minWidth: '3rem',
-      // REFACTORED VALUES
-      fontSize: 'default',
-      lineHeight: '1.5em',
-      paddingLeft: '1.5em',
-      paddingRight: '1.5em',
-      paddingTop: '.75em',
-      paddingBottom: '.75em',
-    },
-    large: {
-      // we don't have large size in the figma - should we remove it as an option?
-      // fontSize: '1.5rem',
-      // height: '4rem',
-      // minWidth: '4rem',
-      // REFACTORED VALUES
-      fontSize: 'large',
-      lineHeight: '1.5rem',
-      paddingLeft: '1.75rem',
-      paddingRight: '1.75rem',
-      paddingTop: '.8rem',
-      paddingBottom: '.8rem',
-    },
-  },
 }
 
 // ALIASES - use theme indexes as much as possible when defining aliases
@@ -248,5 +152,96 @@ theme.fontWeights.bold = theme.fontWeights[3]
 theme.fontSizes.small = theme.fontSizes[2]
 theme.fontSizes.default = theme.fontSizes[3]
 theme.fontSizes.large = theme.fontSizes[4]
+
+theme.buttons = {
+  primary: {
+    // fontWeight: theme.fontWeights.bold,
+    // color: baseColors.white, // are these not used anymore?
+    // backgroundColor: primaryColors.primary700, // are these not used anymore?
+    // use css custom props
+    '--main-color': theme.colors.primary700, // I don't really love the way we need to type the same name, colors, and name again when using color values. Is there a shorter way?
+    // It is nice to be able to shortcut to "primary800" when using the color as a prop value via SS - but here the names feel repetitive
+    // Kick the can down the road on color name grouping?
+    '--contrast-color': brandColors.white,
+    '--hover-color': primaryColors.primary800, // added explicit definitions for all these state values.
+    '--active-color': primaryColors.primary900,
+    '--disabled-color': primaryColors.primary400,
+    '--outline-hover-color': primaryColors.primary200,
+    '--outline-active-color': primaryColors.primary300,
+  },
+  base: {
+    // use css custom props
+    '--main-color': baseColors.base700,
+    '--contrast-color': brandColors.white,
+    '--hover-color': baseColors.base800,
+    '--active-color': baseColors.base900,
+    '--disabled-color': baseColors.base400,
+    '--outline-hover-color': baseColors.base200,
+    '--outline-active-color': baseColors.base300,
+  },
+  success: {
+    '--main-color': successColors.success700,
+    '--contrast-color': brandColors.white,
+    '--hover-color': successColors.success800,
+    '--active-color': successColors.success900,
+    '--disabled-color': successColors.success400,
+    '--outline-hover-color': successColors.success200,
+    '--outline-active-color': successColors.success300,
+  },
+  danger: {
+    '--main-color': errorColors.error700,
+    '--contrast-color': brandColors.white,
+    '--hover-color': errorColors.error800,
+    '--active-color': errorColors.error900,
+    '--disabled-color': errorColors.error400,
+    '--outline-hover-color': errorColors.error200,
+    '--outline-active-color': errorColors.error300,
+  },
+  warning: {
+    '--main-color': warningColors.warning700,
+    '--contrast-color': brandColors.white,
+    '--hover-color': warningColors.warning800,
+    '--active-color': warningColors.warning900,
+    '--disabled-color': warningColors.warning400,
+    '--outline-hover-color': warningColors.warning200,
+    '--outline-active-color': warningColors.warning300,
+  },
+}
+
+theme.buttonSizes = {
+  small: {
+    fontSize: 'small',
+    paddingLeft: 3,
+    paddingRight: 3,
+    // no array for height so pixels for now
+    height: '40px',
+  },
+  medium: {
+    // is this even valid size? Can we default size to 'medium'?
+    // fontSize: '1rem',
+    // height: '3rem',
+    // minWidth: '3rem',
+    // REFACTORED VALUES
+    fontSize: 'default',
+    lineHeight: '1.5em',
+    paddingLeft: '1.5em',
+    paddingRight: '1.5em',
+    paddingTop: '.75em',
+    paddingBottom: '.75em',
+  },
+  large: {
+    // we don't have large size in the figma - should we remove it as an option?
+    // fontSize: '1.5rem',
+    // height: '4rem',
+    // minWidth: '4rem',
+    // REFACTORED VALUES
+    fontSize: 'large',
+    lineHeight: '1.5rem',
+    paddingLeft: '1.75rem',
+    paddingRight: '1.75rem',
+    paddingTop: '.8rem',
+    paddingBottom: '.8rem',
+  },
+}
 
 export default theme
