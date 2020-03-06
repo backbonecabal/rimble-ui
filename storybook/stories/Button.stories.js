@@ -29,21 +29,7 @@ export const solid = () => (
         Warning
       </Button>
     </Box>
-    <Box my={3}>
-      <Button size="large">Default</Button>
-      <Button variant="base" size="large">
-        Base
-      </Button>
-      <Button variant="success" size="large">
-        Success
-      </Button>
-      <Button variant="danger" size="large">
-        Error
-      </Button>
-      <Button variant="warning" size="large">
-        Warning
-      </Button>
-    </Box>
+
     <Box my={3}>
       <Button disabled>Default</Button>
       <Button variant="base" disabled>
@@ -86,21 +72,7 @@ export const outline = () => (
         Warning
       </Button.Outline>
     </Box>
-    <Box my={3}>
-      <Button.Outline size="large">Default</Button.Outline>
-      <Button.Outline variant="base" size="large">
-        Base
-      </Button.Outline>
-      <Button.Outline variant="success" size="large">
-        Success
-      </Button.Outline>
-      <Button.Outline variant="danger" size="large">
-        Error
-      </Button.Outline>
-      <Button.Outline variant="warning" size="large">
-        Warning
-      </Button.Outline>
-    </Box>
+    
     <Box my={3}>
       <Button.Outline disabled>Default</Button.Outline>
       <Button.Outline variant="base" disabled>
