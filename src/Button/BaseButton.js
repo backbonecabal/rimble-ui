@@ -1,55 +1,71 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { buttonStyle, variant, style } from 'styled-system'
+import { buttonStyle, variant, system } from 'styled-system'
 import { StyledBox } from '../Box'
 import Icon from '../Icon'
 
 const buttonSize = variant({
   prop: 'size',
-  key: 'buttonSizes',
+  // scale: 'buttonSizes',
+  variants: {
+    small: {
+      fontSize: 'small',
+      paddingLeft: 3,
+      paddingRight: 3,
+      // no array for height so pixels for now
+      height: '40px',
+    },
+    medium: {
+      fontSize: 'default',
+      paddingLeft: '24px',
+      paddingRight: '24px',
+      // no array for height so pixels for now
+      height: '48px',
+    },
+  },
 })
 
-const mainColor = style({
+const mainColor = system({
   prop: 'mainColor',
   cssProperty: '--main-color',
-  key: 'colors',
+  scale: 'colors',
 })
 
-const contrastColor = style({
+const contrastColor = system({
   prop: 'contrastColor',
   cssProperty: '--contrast-color',
-  key: 'colors',
+  scale: 'colors',
 })
 
-const hoverColor = style({
+const hoverColor = system({
   prop: 'hoverColor',
   cssProperty: '--hover-color',
-  key: 'colors',
+  scale: 'colors',
 })
 
-const activeColor = style({
+const activeColor = system({
   prop: 'activeColor',
   cssProperty: '--active-color',
-  key: 'colors',
+  scale: 'colors',
 })
 
-const disabledColor = style({
+const disabledColor = system({
   prop: 'disabledColor',
   cssProperty: '--disabled-color',
-  key: 'colors',
+  scale: 'colors',
 })
 
-const outlineHoverColor = style({
+const outlineHoverColor = system({
   prop: 'outlineHoverColor',
   cssProperty: '--outline-hover-color',
-  key: 'colors',
+  scale: 'colors',
 })
 
-const outlineActiveColor = style({
+const outlineActiveColor = system({
   prop: 'outlineActiveColor',
   cssProperty: '--outline-active-color',
-  key: 'colors',
+  scale: 'colors',
 })
 
 const StyledButton = styled(StyledBox)`
@@ -64,7 +80,7 @@ const StyledButton = styled(StyledBox)`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: ${props => (props.icononly ? '0' : props.p)};
+    ${'' /* padding: ${props => (props.icononly ? '0' : props.p)}; */}
   }
 
   &:hover {
@@ -141,28 +157,12 @@ const Button = React.forwardRef((props, ref) => {
 Button.defaultProps = {
   // base props
   position: 'relative',
-  // height: '3rem', // why set a height vs y-pad?
-  // minWidth: '3rem', // do we need this?
-  px: 4, // shouldn't this come from the theme? // New theme SPACE property messed this up
-  // py: 0, // shouldn't this come from the theme buttonSize variant?
   fontSize: 'inherit',
-  fontFamily: 'sansSerif',
-  fontWeight: 'body', // use an alias vs array index
+  fontWeight: 'bold',
   lineHeight: 1,
-  // color props
-  color: 'white',
-  bg: 'base700',
-  // mainColor: 'primary700',
-  // contrastColor: 'white',
-  // hoverColor: 'primary800',
-  // activeColor: 'primary900',
-  // disabledColor: 'primary400',
-
   border: 'none',
-  outlineHoverColor: 'primary200',
-  outlineActiveColor: 'primary300',
   size: 'medium',
-  variant: 'primary', // does this work?
+  variant: 'primary',
 }
 
 Button.propTypes = {
