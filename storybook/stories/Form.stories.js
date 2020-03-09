@@ -56,7 +56,7 @@ class MyCustomForm extends Component {
 }
 
 export const form = () => (
-  <Card>
+  <Card m={4}>
     <MyCustomForm />
   </Card>
 )
