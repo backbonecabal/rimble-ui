@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { themeGet } from '@styled-system/theme-get'
-import { CheckCircle } from '@rimble/icons/es/md'
-import { Warning } from '@rimble/icons/es/md'
+
 import FileInput from './FileInput'
 import { StyledBox } from '../Box'
 
@@ -15,17 +14,22 @@ const StyledInput = styled(StyledBox).attrs(props => ({
   }
 
   &:hover {
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    /* need to move into token - currently not tokenized in Figma */
+    box-shadow: 0px 3px 6px rgba(0, 10, 40, 0.06) 
   }
 
   &:focus {
     outline: none;
-    border-color: ${themeGet('colors.primary', '#000')};
+    border-color: ${themeGet('colors.primary700')};
   }
 
   &:disabled {
-    opacity: 0.4;
+    background-color: ${themeGet('colors.base100')};
     pointer-events: none;
+  }
+
+  &::placeholder {
+    color: ${themeGet('colors.base600')};
   }
 
   &[type="color"] {
@@ -53,50 +57,19 @@ const StyledInput = styled(StyledBox).attrs(props => ({
   }
 
   .was-validated & {
-    &:valid {
-      border-color: ${themeGet('colors.success')};
-    }
-    &:valid ~ svg.icon-valid {
-      visibility: visible;
-      color: ${themeGet('colors.success')};
-    }
     &:invalid {
-      border-color: ${themeGet('colors.danger')};
-    }
-    &:invalid ~ svg.icon-invalid {
-      visibility: visible;
-      color: ${themeGet('colors.danger')};
+      border-color: ${themeGet('colors.error500')};
+      background: ${themeGet('colors.error100')};
+      
+      &:focus {
+        border-color: ${themeGet('colors.primary700')};
+      }
     }
   }}
 `
 
-const StyledIconWrapper = styled.div`
-  & {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-  > ${StyledInput} {
-    padding-right: 3rem;
-    text-overflow: ellipsis;
-    white-space: no-wrap;
-  }
-  > svg {
-    position: absolute;
-    right: 1rem;
-    visibility: hidden;
-  }
-`
-
 const WithValidationStyle = React.forwardRef((props, ref) => {
-  return (
-    <StyledIconWrapper>
-      <StyledInput {...props} ref={ref} />
-      <CheckCircle className={'icon-valid'} />
-      <Warning className={'icon-invalid'} />
-    </StyledIconWrapper>
-  )
+  return <StyledInput {...props} ref={ref} />
 })
 
 const Input = React.forwardRef((props, ref) => {
@@ -110,14 +83,14 @@ const Input = React.forwardRef((props, ref) => {
 const defaultProps = {
   color: 'text',
   bg: 'background',
-  fontSize: '1rem',
+  fontFamily: 'inherit',
+  fontSize: 'default',
   lineHeight: 'initial',
-  height: '3rem',
-  p: 3,
+  height: '48px',
+  px: '20px',
   border: 1,
-  borderColor: 'moon-gray',
+  borderColor: 'base400',
   borderRadius: 1,
-  boxShadow: 1,
 }
 
 Input.WithValidationStyle = WithValidationStyle

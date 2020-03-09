@@ -1,43 +1,44 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Box from '../Box';
-import Text from '../Text';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import Box from '../Box'
+import Text from '../Text'
+import { themeGet } from '@styled-system/theme-get'
 
-const OptionalLabel = styled(Text)`
+const RequiredLabel = styled(Text)`
   &:after {
-    content: ' (optional)';
+    content: ' *';
     font-weight: normal;
-    font-style: italic;
+    color: ${themeGet('colors.error700')};
   }
-`;
+`
 
 const Field = React.forwardRef(({ label, children, ...props }, ref) => {
   const isRequired = children => {
-    let value = false;
+    let value = false
     React.Children.forEach(children, child => {
       if (child.props.required) {
-        value = true;
+        value = true
       }
-    });
-    return value;
-  };
+    })
+    return value
+  }
 
   const renderLabel = required => {
     if (required) {
       return (
-        <Text fontSize={1} fontWeight={3} mb={2}>
+        <RequiredLabel fontSize={'small'} fontWeight={'label'} mb={2}>
           {label}
-        </Text>
-      );
+        </RequiredLabel>
+      )
     } else {
       return (
-        <OptionalLabel fontSize={1} fontWeight={3} mb={2}>
+        <Text fontSize={'small'} fontWeight={'label'} mb={2}>
           {label}
-        </OptionalLabel>
-      );
+        </Text>
+      )
     }
-  };
+  }
 
   return (
     <Box
@@ -52,15 +53,15 @@ const Field = React.forwardRef(({ label, children, ...props }, ref) => {
       {renderLabel(isRequired(children))}
       {children}
     </Box>
-  );
-});
+  )
+})
 
 Field.propTypes = {
   // ...Box.propTypes,
   label: PropTypes.string.isRequired,
   children: PropTypes.element.isRequired,
-};
+}
 
-Field.displayName = 'Field';
+Field.displayName = 'Field'
 
-export default Field;
+export default Field

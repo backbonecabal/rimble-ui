@@ -147,6 +147,7 @@ const theme = {
 // Use aliases as much as possible
 theme.fontWeights.body = theme.fontWeights[1]
 theme.fontWeights.heading = theme.fontWeights[2]
+theme.fontWeights.label = theme.fontWeights[2]
 theme.fontWeights.bold = theme.fontWeights[3]
 
 theme.fontSizes.small = theme.fontSizes[1]
