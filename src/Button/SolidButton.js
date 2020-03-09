@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import theme from '../theme'
-import Button, { StyledButton, ButtonBody } from './BaseButton'
+import Button, { StyledButton } from './BaseButton'
 
 // outline styles
 const StyledSolidButton = styled(StyledButton)`
@@ -39,15 +39,9 @@ const StyledSolidButton = styled(StyledButton)`
   }
 `
 
-const SolidButton = React.forwardRef(
-  ({ children, icon, iconpos, ...props }, ref) => {
-    return (
-      <StyledSolidButton {...props} ref={ref}>
-        <ButtonBody icon={icon} iconpos={iconpos} children={children} />
-      </StyledSolidButton>
-    )
-  }
-)
+const SolidButton = React.forwardRef((props, ref) => {
+  return <StyledSolidButton {...props} ref={ref} />
+})
 
 SolidButton.defaultProps = {
   ...Button.defaultProps,
