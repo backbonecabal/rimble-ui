@@ -149,9 +149,9 @@ theme.fontWeights.body = theme.fontWeights[1]
 theme.fontWeights.heading = theme.fontWeights[2]
 theme.fontWeights.bold = theme.fontWeights[3]
 
-theme.fontSizes.small = theme.fontSizes[2]
-theme.fontSizes.default = theme.fontSizes[3]
-theme.fontSizes.large = theme.fontSizes[4]
+theme.fontSizes.small = theme.fontSizes[1]
+theme.fontSizes.default = theme.fontSizes[2]
+// theme.fontSizes.large = theme.fontSizes[4]
 
 theme.buttons = {
   primary: {
@@ -205,42 +205,6 @@ theme.buttons = {
     '--disabled-color': warningColors.warning400,
     '--outline-hover-color': warningColors.warning200,
     '--outline-active-color': warningColors.warning300,
-  },
-}
-
-theme.buttonSizes = {
-  small: {
-    fontSize: 'small',
-    paddingLeft: 3,
-    paddingRight: 3,
-    // no array for height so pixels for now
-    height: '40px',
-  },
-  medium: {
-    // is this even valid size? Can we default size to 'medium'?
-    // fontSize: '1rem',
-    // height: '3rem',
-    // minWidth: '3rem',
-    // REFACTORED VALUES
-    fontSize: 'default',
-    lineHeight: '1.5em',
-    paddingLeft: '1.5em',
-    paddingRight: '1.5em',
-    paddingTop: '.75em',
-    paddingBottom: '.75em',
-  },
-  large: {
-    // we don't have large size in the figma - should we remove it as an option?
-    // fontSize: '1.5rem',
-    // height: '4rem',
-    // minWidth: '4rem',
-    // REFACTORED VALUES
-    fontSize: 'large',
-    lineHeight: '1.5rem',
-    paddingLeft: '1.75rem',
-    paddingRight: '1.75rem',
-    paddingTop: '.8rem',
-    paddingBottom: '.8rem',
   },
 }
 
