@@ -3,10 +3,10 @@
 exports[`Pill component sanity matches default snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
-  color: #3259D6;
+  color: #1A5AFE;
   background-color: #FFF;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1;
   height: 2rem;
   padding-left: 16px;
@@ -56,10 +56,10 @@ exports[`Pill component sanity matches default snapshot 1`] = `
 exports[`Pill component sanity matches themed snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
-  color: #3259D6;
+  color: #1A5AFE;
   background-color: #FFF;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1;
   height: 2rem;
   padding-left: 16px;

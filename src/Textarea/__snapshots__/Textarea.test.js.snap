@@ -5,14 +5,15 @@ exports[`Textarea component sanity matches default snapshot 1`] = `
   box-sizing: border-box;
   line-height: 1.5;
   height: auto;
-  color: #3F3D4B;
-  background-color: #fff;
-  font-size: 1rem;
-  padding: 16px;
+  color: #000A28;
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: 1px solid transparent;
-  border-color: #ccc;
+  border-color: #C2C4CC;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
 .c0 {
@@ -22,17 +23,33 @@ exports[`Textarea component sanity matches default snapshot 1`] = `
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+  box-shadow: 0px 3px 6px rgba(0,10,40,0.06);
 }
 
 .c0:focus {
   outline: none;
-  border-color: #4E3FCE;
+  border-color: #1A5AFE;
 }
 
 .c0:disabled {
-  opacity: 0.4;
+  background-color: #F8F8F9;
   pointer-events: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #777C8C;
+}
+
+.c0::-moz-placeholder {
+  color: #777C8C;
+}
+
+.c0:-ms-input-placeholder {
+  color: #777C8C;
+}
+
+.c0::placeholder {
+  color: #777C8C;
 }
 
 .c0[type="color"] {
@@ -73,28 +90,20 @@ exports[`Textarea component sanity matches default snapshot 1`] = `
   border-radius: 100%;
 }
 
-.was-validated .c0:valid {
-  border-color: #28C081;
-}
-
-.was-validated .c0:valid ~ svg.icon-valid {
-  visibility: visible;
-  color: #28C081;
-}
-
 .was-validated .c0:invalid {
-  border-color: #DC2C10;
+  border-color: #E58989;
+  background: #FCF5F5;
 }
 
-.was-validated .c0:invalid ~ svg.icon-invalid {
-  visibility: visible;
-  color: #DC2C10;
+.was-validated .c0:invalid:focus {
+  border-color: #1A5AFE;
 }
 
 <textarea
   class="c0"
   color="text"
-  font-size="1rem"
+  font-family="inherit"
+  font-size="default"
   height="auto"
 />
 `;
@@ -104,14 +113,15 @@ exports[`Textarea component sanity matches themed snapshot 1`] = `
   box-sizing: border-box;
   line-height: 1.5;
   height: auto;
-  color: #3F3D4B;
-  background-color: #fff;
-  font-size: 1rem;
-  padding: 16px;
+  color: #000A28;
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: 1px solid transparent;
-  border-color: #ccc;
+  border-color: #C2C4CC;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
 .c0 {
@@ -121,17 +131,33 @@ exports[`Textarea component sanity matches themed snapshot 1`] = `
 }
 
 .c0:hover {
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+  box-shadow: 0px 3px 6px rgba(0,10,40,0.06);
 }
 
 .c0:focus {
   outline: none;
-  border-color: #4E3FCE;
+  border-color: #1A5AFE;
 }
 
 .c0:disabled {
-  opacity: 0.4;
+  background-color: #F8F8F9;
   pointer-events: none;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #777C8C;
+}
+
+.c0::-moz-placeholder {
+  color: #777C8C;
+}
+
+.c0:-ms-input-placeholder {
+  color: #777C8C;
+}
+
+.c0::placeholder {
+  color: #777C8C;
 }
 
 .c0[type="color"] {
@@ -172,28 +198,20 @@ exports[`Textarea component sanity matches themed snapshot 1`] = `
   border-radius: 100%;
 }
 
-.was-validated .c0:valid {
-  border-color: #28C081;
-}
-
-.was-validated .c0:valid ~ svg.icon-valid {
-  visibility: visible;
-  color: #28C081;
-}
-
 .was-validated .c0:invalid {
-  border-color: #DC2C10;
+  border-color: #E58989;
+  background: #FCF5F5;
 }
 
-.was-validated .c0:invalid ~ svg.icon-invalid {
-  visibility: visible;
-  color: #DC2C10;
+.was-validated .c0:invalid:focus {
+  border-color: #1A5AFE;
 }
 
 <textarea
   class="c0"
   color="text"
-  font-size="1rem"
+  font-family="inherit"
+  font-size="default"
   height="auto"
 />
 `;

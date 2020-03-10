@@ -19,23 +19,25 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
+  width: medium;
+  height: medium;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c0 {
@@ -113,7 +115,7 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -122,16 +124,11 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -144,17 +141,17 @@ exports[`Button Icon component sanity matches default snapshot 1`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 <button
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <div
     class="c1"
@@ -199,23 +196,25 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
+  width: medium;
+  height: medium;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c0 {
@@ -293,7 +292,7 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -302,16 +301,11 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -324,17 +318,17 @@ exports[`Button Icon component sanity matches themed snapshot 1`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 <button
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <div
     class="c1"
@@ -379,23 +373,25 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
+  width: medium;
+  height: medium;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c0 {
@@ -424,7 +420,6 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0;
 }
 
 .c0:hover {
@@ -474,7 +469,7 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -483,16 +478,11 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -505,17 +495,17 @@ exports[`Button Icon only component sanity matches default snapshot 1`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 <button
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <div
     class="c1"
@@ -556,23 +546,25 @@ exports[`Button Icon with position prop component sanity matches default snapsho
 .c0 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
+  width: medium;
+  height: medium;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c0 {
@@ -650,7 +642,7 @@ exports[`Button Icon with position prop component sanity matches default snapsho
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -659,16 +651,11 @@ exports[`Button Icon with position prop component sanity matches default snapsho
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -681,17 +668,17 @@ exports[`Button Icon with position prop component sanity matches default snapsho
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 <button
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <div
     class="c1"
@@ -721,23 +708,25 @@ exports[`Button component sanity matches default snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
+  width: medium;
+  height: medium;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c0 {
@@ -815,7 +804,7 @@ exports[`Button component sanity matches default snapshot 1`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -824,16 +813,11 @@ exports[`Button component sanity matches default snapshot 1`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -846,17 +830,17 @@ exports[`Button component sanity matches default snapshot 1`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 <button
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <span
     class="button-text"
@@ -868,23 +852,25 @@ exports[`Button component sanity matches themed snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
+  width: medium;
+  height: medium;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c0 {
@@ -962,7 +948,7 @@ exports[`Button component sanity matches themed snapshot 1`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -971,16 +957,11 @@ exports[`Button component sanity matches themed snapshot 1`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -993,17 +974,17 @@ exports[`Button component sanity matches themed snapshot 1`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 <button
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <span
     class="button-text"
@@ -1015,23 +996,25 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
+  width: medium;
+  height: medium;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c0 {
@@ -1109,7 +1092,7 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -1118,16 +1101,11 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -1140,18 +1118,18 @@ exports[`Button disabled component sanity matches default snapshot 1`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 <button
   class="c0"
-  color="white"
   disabled=""
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <span
     class="button-text"
@@ -1163,23 +1141,25 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
+  width: medium;
+  height: medium;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c0 {
@@ -1257,7 +1237,7 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -1266,16 +1246,11 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -1288,18 +1263,18 @@ exports[`Button disabled component sanity matches themed snapshot 1`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 <button
   class="c0"
-  color="white"
   disabled=""
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <span
     class="button-text"
@@ -1311,28 +1286,25 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
   width: small;
-  height: 3rem;
+  height: small;
   position: relative;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
-  font-size: 0.75rem;
-  height: 2rem;
-  min-width: 2rem;
-  padding: 0 1rem;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 40px;
 }
 
 .c0 {
@@ -1410,7 +1382,7 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -1419,16 +1391,11 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -1441,17 +1408,17 @@ exports[`Button size variant component sanity matches default snapshot 1`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 <button
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <span
     class="button-text"
@@ -1463,27 +1430,21 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
 .c0 {
   box-sizing: border-box;
   width: large;
-  height: 3rem;
+  height: large;
   position: relative;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
-  font-size: 1.5rem;
-  height: 4rem;
-  min-width: 4rem;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
 }
 
 .c0 {
@@ -1561,7 +1522,7 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -1570,16 +1531,11 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -1592,17 +1548,17 @@ exports[`Button size variant component sanity matches default snapshot 2`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 <button
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <span
     class="button-text"
@@ -1614,28 +1570,25 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
   width: small;
-  height: 3rem;
+  height: small;
   position: relative;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
-  font-size: 0.75rem;
-  height: 2rem;
-  min-width: 2rem;
-  padding: 0 1rem;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 40px;
 }
 
 .c0 {
@@ -1713,7 +1666,7 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -1722,16 +1675,11 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -1744,17 +1692,17 @@ exports[`Button size variant component sanity matches themed snapshot 1`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 <button
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <span
     class="button-text"
@@ -1766,27 +1714,21 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
 .c0 {
   box-sizing: border-box;
   width: large;
-  height: 3rem;
+  height: large;
   position: relative;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
-  font-size: 1.5rem;
-  height: 4rem;
-  min-width: 4rem;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
 }
 
 .c0 {
@@ -1864,7 +1806,7 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -1873,16 +1815,11 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -1895,17 +1832,17 @@ exports[`Button size variant component sanity matches themed snapshot 2`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 <button
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <span
     class="button-text"
@@ -1917,24 +1854,25 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: 1px solid transparent;
+  width: medium;
+  height: medium;
   border-radius: 4px;
   box-shadow: 0;
-  border-color: #CCC;
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c0 {
@@ -2012,7 +1950,7 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -2021,16 +1959,11 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -2043,42 +1976,35 @@ exports[`Button.Outline component sanity matches default snapshot 1`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 .c0 {
   color: var(--main-color);
+  border-color: var(--main-color);
   background: transparent;
 }
 
 .c0:hover {
-  border-color: var(--main-color);
-}
-
-.c0:hover::before {
-  opacity: 0;
+  background: var(--outline-hover-color);
 }
 
 .c0:active {
-  background: #fff;
+  background: var(--outline-active-color);
 }
 
-.c0:active::before {
-  opacity: 0.1;
-}
-
-.c0::before {
-  opacity: 0;
+.c0:disabled {
+  background: transparent;
 }
 
 <button
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <span
     class="button-text"
@@ -2090,24 +2016,25 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: 1px solid transparent;
+  width: medium;
+  height: medium;
   border-radius: 4px;
   box-shadow: 0;
-  border-color: #CCC;
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c0 {
@@ -2185,7 +2112,7 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -2194,16 +2121,11 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -2216,42 +2138,35 @@ exports[`Button.Outline component sanity matches themed snapshot 1`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 .c0 {
   color: var(--main-color);
+  border-color: var(--main-color);
   background: transparent;
 }
 
 .c0:hover {
-  border-color: var(--main-color);
-}
-
-.c0:hover::before {
-  opacity: 0;
+  background: var(--outline-hover-color);
 }
 
 .c0:active {
-  background: #fff;
+  background: var(--outline-active-color);
 }
 
-.c0:active::before {
-  opacity: 0.1;
-}
-
-.c0::before {
-  opacity: 0;
+.c0:disabled {
+  background: transparent;
 }
 
 <button
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <span
     class="button-text"
@@ -2263,21 +2178,25 @@ exports[`Button.Text component sanity matches default snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  width: medium;
+  height: medium;
+  padding-left: 8px;
+  padding-right: 8px;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c0 {
@@ -2378,11 +2297,8 @@ exports[`Button.Text component sanity matches default snapshot 1`] = `
 
 <button
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <span
     class="button-text"
@@ -2394,21 +2310,25 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  width: medium;
+  height: medium;
+  padding-left: 8px;
+  padding-right: 8px;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c0 {
@@ -2509,11 +2429,8 @@ exports[`Button.Text component sanity matches themed snapshot 1`] = `
 
 <button
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <span
     class="button-text"
@@ -2525,24 +2442,25 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: 1px solid transparent;
+  width: medium;
+  height: medium;
   border-radius: 4px;
   box-shadow: 0;
-  border-color: #CCC;
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c0 {
@@ -2620,7 +2538,7 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -2629,16 +2547,11 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -2651,42 +2564,35 @@ exports[`Link Button Outline component sanity matches default snapshot 1`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 .c0 {
   color: var(--main-color);
+  border-color: var(--main-color);
   background: transparent;
 }
 
 .c0:hover {
-  border-color: var(--main-color);
-}
-
-.c0:hover::before {
-  opacity: 0;
+  background: var(--outline-hover-color);
 }
 
 .c0:active {
-  background: #fff;
+  background: var(--outline-active-color);
 }
 
-.c0:active::before {
-  opacity: 0.1;
-}
-
-.c0::before {
-  opacity: 0;
+.c0:disabled {
+  background: transparent;
 }
 
 <a
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
   href="#!"
   target="_blank"
   title="Learn more"
@@ -2703,23 +2609,25 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
+  width: medium;
+  height: medium;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c0 {
@@ -2797,7 +2705,7 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -2806,16 +2714,11 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -2828,17 +2731,17 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 <a
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
   href="#!"
   target="_blank"
   title="Learn more"
@@ -2854,7 +2757,7 @@ exports[`Link Button component sanity matches default snapshot 1`] = `
 exports[`Loading Button component sanity matches default snapshot 1`] = `
 .c1 {
   box-sizing: border-box;
-  color: #fff;
+  color: #ffffff;
   background-color: transparent;
   width: 1rem;
   height: 1rem;
@@ -2863,23 +2766,25 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
 .c0 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
+  width: medium;
+  height: medium;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c0 {
@@ -2957,7 +2862,7 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -2966,16 +2871,11 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -2988,8 +2888,11 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 .c2 {
@@ -3011,11 +2914,8 @@ exports[`Loading Button component sanity matches default snapshot 1`] = `
 
 <button
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <span
     class="button-text"
@@ -3087,23 +2987,25 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
 .c0 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
+  width: medium;
+  height: medium;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c0 {
@@ -3132,7 +3034,6 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0;
 }
 
 .c0:hover {
@@ -3182,7 +3083,7 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
 
 .c0 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -3191,16 +3092,11 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
 .c0:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c0:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c0:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c0::before {
@@ -3213,17 +3109,17 @@ exports[`Loading Button component sanity matches default snapshot 2`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c0:disabled {
+  background: var(--disabled-color);
 }
 
 <button
   class="c0"
-  color="white"
-  font-family="sansSerif"
   font-size="inherit"
-  font-weight="3"
-  height="3rem"
+  font-weight="bold"
 >
   <div
     class="c1"

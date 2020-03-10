@@ -35,12 +35,12 @@ exports[`Form component sanity matches themed snapshot 1`] = `
 .c2 {
   box-sizing: border-box;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 8px;
   line-height: 1.5;
 }
 
-.c8 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -51,13 +51,13 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 16px;
-  color: #4E3FCE;
+  color: #1A5AFE;
   opacity: 1;
 }
 
-.c13 {
+.c10 {
   box-sizing: border-box;
-  color: #3F3D4B;
+  color: #000A28;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
@@ -65,75 +65,78 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   margin-right: 8px;
 }
 
-.c11 {
+.c8 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   color: inherit;
 }
 
-.c12 {
+.c9 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   color: inherit;
 }
 
-.c6 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  color: inherit;
-}
-
-.c7 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  color: inherit;
-}
-
-.c5 {
+.c4 {
   box-sizing: border-box;
   width: 100%;
-  color: #3F3D4B;
-  background-color: #fff;
-  font-size: 1rem;
+  color: #000A28;
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
   line-height: initial;
-  height: 3rem;
-  padding: 16px;
+  height: 48px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: 1px solid transparent;
-  border-color: #ccc;
+  border-color: #C2C4CC;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
-.c5 {
+.c4 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.c5:hover {
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+.c4:hover {
+  box-shadow: 0px 3px 6px rgba(0,10,40,0.06);
 }
 
-.c5:focus {
+.c4:focus {
   outline: none;
-  border-color: #4E3FCE;
+  border-color: #1A5AFE;
 }
 
-.c5:disabled {
-  opacity: 0.4;
+.c4:disabled {
+  background-color: #F8F8F9;
   pointer-events: none;
 }
 
-.c5[type="color"] {
+.c4::-webkit-input-placeholder {
+  color: #777C8C;
+}
+
+.c4::-moz-placeholder {
+  color: #777C8C;
+}
+
+.c4:-ms-input-placeholder {
+  color: #777C8C;
+}
+
+.c4::placeholder {
+  color: #777C8C;
+}
+
+.c4[type="color"] {
   min-width: 3rem;
   padding: 0;
 }
 
-.c5[type="color"]::-webkit-color-swatch-wrapper {
+.c4[type="color"]::-webkit-color-swatch-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -149,7 +152,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   padding: 0;
 }
 
-.c5[type="color"]::-webkit-color-swatch {
+.c4[type="color"]::-webkit-color-swatch {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -159,62 +162,34 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   border-radius: 100%;
 }
 
-.c5[type="color"]::-moz-color-swatch {
+.c4[type="color"]::-moz-color-swatch {
   height: 2rem;
   width: 2rem;
   border: none;
   border-radius: 100%;
 }
 
-.was-validated .c5:valid {
-  border-color: #28C081;
+.was-validated .c4:invalid {
+  border-color: #E58989;
+  background: #FCF5F5;
 }
 
-.was-validated .c5:valid ~ svg.icon-valid {
-  visibility: visible;
-  color: #28C081;
+.was-validated .c4:invalid:focus {
+  border-color: #1A5AFE;
 }
 
-.was-validated .c5:invalid {
-  border-color: #DC2C10;
+.c3:after {
+  content: ' *';
+  font-weight: normal;
+  color: #B20000;
 }
 
-.was-validated .c5:invalid ~ svg.icon-invalid {
-  visibility: visible;
-  color: #DC2C10;
-}
-
-.c3 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.c3 > .c4 {
-  padding-right: 3rem;
-  text-overflow: ellipsis;
-  white-space: no-wrap;
-}
-
-.c3 > svg {
-  position: absolute;
-  right: 1rem;
-  visibility: hidden;
-}
-
-.c10 {
+.c7 {
   position: relative;
   display: inline-block;
 }
 
-.c10 > input {
+.c7 > input {
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -227,7 +202,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   margin: 0;
 }
 
-.c10 > svg {
+.c7 > svg {
   position: absolute;
   z-index: 0;
   top: 0;
@@ -237,24 +212,24 @@ exports[`Form component sanity matches themed snapshot 1`] = `
   height: 100%;
   width: 100%;
   pointer-events: none;
-  fill: #CCC;
+  fill: #989CA6;
 }
 
-.c10 > svg[name='checked'] {
+.c7 > svg[name='checked'] {
   display: none;
   z-index: 1;
-  fill: #4E3FCE;
+  fill: #1A5AFE;
 }
 
-.c10 > input:checked ~ svg[name='checked'] {
+.c7 > input:checked ~ svg[name='checked'] {
   display: block;
 }
 
-.c9 {
+.c6 {
   cursor: pointer;
 }
 
-.c9:hover input:not(:disabled) ~ svg[name='unchecked'] {
+.c6:hover input:not(:disabled) ~ svg[name='unchecked'] {
   fill: currentColor;
 }
 
@@ -267,59 +242,22 @@ exports[`Form component sanity matches themed snapshot 1`] = `
     width="1"
   >
     <div
-      class="c2"
-      font-size="1"
-      font-weight="3"
+      class="c2 c3"
+      font-size="small"
+      font-weight="label"
     >
       Email
     </div>
-    <div
-      class="c3"
-    >
-      <input
-        class="c4 c5"
-        color="text"
-        font-size="1rem"
-        height="3rem"
-        required=""
-        type="email"
-        width="1"
-      />
-      <svg
-        class="c6 icon-valid"
-        color="inherit"
-        fill="currentcolor"
-        height="24"
-        size="24"
-        viewBox="0 0 24 24"
-        width="24"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-        />
-      </svg>
-      <svg
-        class="c7 icon-invalid"
-        color="inherit"
-        fill="currentcolor"
-        height="24"
-        size="24"
-        viewBox="0 0 24 24"
-        width="24"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
-        />
-      </svg>
-    </div>
+    <input
+      class="c4"
+      color="text"
+      font-family="inherit"
+      font-size="default"
+      height="48px"
+      required=""
+      type="email"
+      width="1"
+    />
   </label>
   <label
     class="c1"
@@ -327,68 +265,31 @@ exports[`Form component sanity matches themed snapshot 1`] = `
     width="1"
   >
     <div
-      class="c2"
-      font-size="1"
-      font-weight="3"
+      class="c2 c3"
+      font-size="small"
+      font-weight="label"
     >
       Password
     </div>
-    <div
-      class="c3"
-    >
-      <input
-        class="c4 c5"
-        color="text"
-        font-size="1rem"
-        height="3rem"
-        required=""
-        type="password"
-        width="1"
-      />
-      <svg
-        class="c6 icon-valid"
-        color="inherit"
-        fill="currentcolor"
-        height="24"
-        size="24"
-        viewBox="0 0 24 24"
-        width="24"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-        />
-      </svg>
-      <svg
-        class="c7 icon-invalid"
-        color="inherit"
-        fill="currentcolor"
-        height="24"
-        size="24"
-        viewBox="0 0 24 24"
-        width="24"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
-        />
-      </svg>
-    </div>
+    <input
+      class="c4"
+      color="text"
+      font-family="inherit"
+      font-size="default"
+      height="48px"
+      required=""
+      type="password"
+      width="1"
+    />
   </label>
   <label
-    class="c8 c9"
+    class="c5 c6"
     color="primary"
     display="flex"
     opacity="1"
   >
     <div
-      class="c0 c10"
+      class="c0 c7"
     >
       <input
         color="primary"
@@ -396,7 +297,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         type="checkbox"
       />
       <svg
-        class="c11"
+        class="c8"
         color="inherit"
         fill="currentcolor"
         height="24"
@@ -414,7 +315,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
         />
       </svg>
       <svg
-        class="c12"
+        class="c9"
         color="inherit"
         fill="currentcolor"
         height="24"
@@ -433,7 +334,7 @@ exports[`Form component sanity matches themed snapshot 1`] = `
       </svg>
     </div>
     <div
-      class="c13"
+      class="c10"
       color="text"
       font-size="1"
       font-weight="3"
@@ -469,12 +370,12 @@ exports[`Form component sanity renders children elements 1`] = `
 .c2 {
   box-sizing: border-box;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 8px;
   line-height: 1.5;
 }
 
-.c8 {
+.c5 {
   box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
@@ -485,13 +386,13 @@ exports[`Form component sanity renders children elements 1`] = `
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 16px;
-  color: #4E3FCE;
+  color: #1A5AFE;
   opacity: 1;
 }
 
-.c13 {
+.c10 {
   box-sizing: border-box;
-  color: #3F3D4B;
+  color: #000A28;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
@@ -499,75 +400,78 @@ exports[`Form component sanity renders children elements 1`] = `
   margin-right: 8px;
 }
 
-.c11 {
+.c8 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   color: inherit;
 }
 
-.c12 {
+.c9 {
   -webkit-flex: none;
   -ms-flex: none;
   flex: none;
   color: inherit;
 }
 
-.c6 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  color: inherit;
-}
-
-.c7 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  color: inherit;
-}
-
-.c5 {
+.c4 {
   box-sizing: border-box;
   width: 100%;
-  color: #3F3D4B;
-  background-color: #fff;
-  font-size: 1rem;
+  color: #000A28;
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
   line-height: initial;
-  height: 3rem;
-  padding: 16px;
+  height: 48px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: 1px solid transparent;
-  border-color: #ccc;
+  border-color: #C2C4CC;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 
-.c5 {
+.c4 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.c5:hover {
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+.c4:hover {
+  box-shadow: 0px 3px 6px rgba(0,10,40,0.06);
 }
 
-.c5:focus {
+.c4:focus {
   outline: none;
-  border-color: #4E3FCE;
+  border-color: #1A5AFE;
 }
 
-.c5:disabled {
-  opacity: 0.4;
+.c4:disabled {
+  background-color: #F8F8F9;
   pointer-events: none;
 }
 
-.c5[type="color"] {
+.c4::-webkit-input-placeholder {
+  color: #777C8C;
+}
+
+.c4::-moz-placeholder {
+  color: #777C8C;
+}
+
+.c4:-ms-input-placeholder {
+  color: #777C8C;
+}
+
+.c4::placeholder {
+  color: #777C8C;
+}
+
+.c4[type="color"] {
   min-width: 3rem;
   padding: 0;
 }
 
-.c5[type="color"]::-webkit-color-swatch-wrapper {
+.c4[type="color"]::-webkit-color-swatch-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -583,7 +487,7 @@ exports[`Form component sanity renders children elements 1`] = `
   padding: 0;
 }
 
-.c5[type="color"]::-webkit-color-swatch {
+.c4[type="color"]::-webkit-color-swatch {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -593,62 +497,33 @@ exports[`Form component sanity renders children elements 1`] = `
   border-radius: 100%;
 }
 
-.c5[type="color"]::-moz-color-swatch {
+.c4[type="color"]::-moz-color-swatch {
   height: 2rem;
   width: 2rem;
   border: none;
   border-radius: 100%;
 }
 
-.was-validated .c5:valid {
-  border-color: #28C081;
+.was-validated .c4:invalid {
+  border-color: #E58989;
+  background: #FCF5F5;
 }
 
-.was-validated .c5:valid ~ svg.icon-valid {
-  visibility: visible;
-  color: #28C081;
+.was-validated .c4:invalid:focus {
+  border-color: #1A5AFE;
 }
 
-.was-validated .c5:invalid {
-  border-color: #DC2C10;
+.c3:after {
+  content: ' *';
+  font-weight: normal;
 }
 
-.was-validated .c5:invalid ~ svg.icon-invalid {
-  visibility: visible;
-  color: #DC2C10;
-}
-
-.c3 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.c3 > .c4 {
-  padding-right: 3rem;
-  text-overflow: ellipsis;
-  white-space: no-wrap;
-}
-
-.c3 > svg {
-  position: absolute;
-  right: 1rem;
-  visibility: hidden;
-}
-
-.c10 {
+.c7 {
   position: relative;
   display: inline-block;
 }
 
-.c10 > input {
+.c7 > input {
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -661,7 +536,7 @@ exports[`Form component sanity renders children elements 1`] = `
   margin: 0;
 }
 
-.c10 > svg {
+.c7 > svg {
   position: absolute;
   z-index: 0;
   top: 0;
@@ -671,24 +546,24 @@ exports[`Form component sanity renders children elements 1`] = `
   height: 100%;
   width: 100%;
   pointer-events: none;
-  fill: #CCC;
+  fill: #989CA6;
 }
 
-.c10 > svg[name='checked'] {
+.c7 > svg[name='checked'] {
   display: none;
   z-index: 1;
-  fill: #4E3FCE;
+  fill: #1A5AFE;
 }
 
-.c10 > input:checked ~ svg[name='checked'] {
+.c7 > input:checked ~ svg[name='checked'] {
   display: block;
 }
 
-.c9 {
+.c6 {
   cursor: pointer;
 }
 
-.c9:hover input:not(:disabled) ~ svg[name='unchecked'] {
+.c6:hover input:not(:disabled) ~ svg[name='unchecked'] {
   fill: currentColor;
 }
 
@@ -701,59 +576,22 @@ exports[`Form component sanity renders children elements 1`] = `
     width="1"
   >
     <div
-      class="c2"
-      font-size="1"
-      font-weight="3"
+      class="c2 c3"
+      font-size="small"
+      font-weight="label"
     >
       Email
     </div>
-    <div
-      class="c3"
-    >
-      <input
-        class="c4 c5"
-        color="text"
-        font-size="1rem"
-        height="3rem"
-        required=""
-        type="email"
-        width="1"
-      />
-      <svg
-        class="c6 icon-valid"
-        color="inherit"
-        fill="currentcolor"
-        height="24"
-        size="24"
-        viewBox="0 0 24 24"
-        width="24"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-        />
-      </svg>
-      <svg
-        class="c7 icon-invalid"
-        color="inherit"
-        fill="currentcolor"
-        height="24"
-        size="24"
-        viewBox="0 0 24 24"
-        width="24"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
-        />
-      </svg>
-    </div>
+    <input
+      class="c4"
+      color="text"
+      font-family="inherit"
+      font-size="default"
+      height="48px"
+      required=""
+      type="email"
+      width="1"
+    />
   </label>
   <label
     class="c1"
@@ -761,68 +599,31 @@ exports[`Form component sanity renders children elements 1`] = `
     width="1"
   >
     <div
-      class="c2"
-      font-size="1"
-      font-weight="3"
+      class="c2 c3"
+      font-size="small"
+      font-weight="label"
     >
       Password
     </div>
-    <div
-      class="c3"
-    >
-      <input
-        class="c4 c5"
-        color="text"
-        font-size="1rem"
-        height="3rem"
-        required=""
-        type="password"
-        width="1"
-      />
-      <svg
-        class="c6 icon-valid"
-        color="inherit"
-        fill="currentcolor"
-        height="24"
-        size="24"
-        viewBox="0 0 24 24"
-        width="24"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
-        />
-      </svg>
-      <svg
-        class="c7 icon-invalid"
-        color="inherit"
-        fill="currentcolor"
-        height="24"
-        size="24"
-        viewBox="0 0 24 24"
-        width="24"
-      >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"
-        />
-      </svg>
-    </div>
+    <input
+      class="c4"
+      color="text"
+      font-family="inherit"
+      font-size="default"
+      height="48px"
+      required=""
+      type="password"
+      width="1"
+    />
   </label>
   <label
-    class="c8 c9"
+    class="c5 c6"
     color="primary"
     display="flex"
     opacity="1"
   >
     <div
-      class="c0 c10"
+      class="c0 c7"
     >
       <input
         color="primary"
@@ -830,7 +631,7 @@ exports[`Form component sanity renders children elements 1`] = `
         type="checkbox"
       />
       <svg
-        class="c11"
+        class="c8"
         color="inherit"
         fill="currentcolor"
         height="24"
@@ -848,7 +649,7 @@ exports[`Form component sanity renders children elements 1`] = `
         />
       </svg>
       <svg
-        class="c12"
+        class="c9"
         color="inherit"
         fill="currentcolor"
         height="24"
@@ -867,7 +668,7 @@ exports[`Form component sanity renders children elements 1`] = `
       </svg>
     </div>
     <div
-      class="c13"
+      class="c10"
       color="text"
       font-size="1"
       font-weight="3"

@@ -25,7 +25,7 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #4E3FCE;
+  color: #1A5AFE;
   opacity: 1;
 }
 
@@ -35,7 +35,7 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
 
 .c6 {
   box-sizing: border-box;
-  color: #3F3D4B;
+  color: #000A28;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
@@ -71,13 +71,13 @@ exports[`Checkbox component sanity matches default snapshot 1`] = `
   height: 100%;
   width: 100%;
   pointer-events: none;
-  fill: #CCC;
+  fill: #989CA6;
 }
 
 .c3 > svg[name='checked'] {
   display: none;
   z-index: 1;
-  fill: #4E3FCE;
+  fill: #1A5AFE;
 }
 
 .c3 > input:checked ~ svg[name='checked'] {
@@ -176,7 +176,7 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #4E3FCE;
+  color: #1A5AFE;
   opacity: 1;
 }
 
@@ -186,7 +186,7 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
 
 .c6 {
   box-sizing: border-box;
-  color: #3F3D4B;
+  color: #000A28;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
@@ -222,13 +222,13 @@ exports[`Checkbox component sanity matches themed snapshot 1`] = `
   height: 100%;
   width: 100%;
   pointer-events: none;
-  fill: #CCC;
+  fill: #989CA6;
 }
 
 .c3 > svg[name='checked'] {
   display: none;
   z-index: 1;
-  fill: #4E3FCE;
+  fill: #1A5AFE;
 }
 
 .c3 > input:checked ~ svg[name='checked'] {

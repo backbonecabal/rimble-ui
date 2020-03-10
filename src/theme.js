@@ -150,6 +150,7 @@ theme.fontWeights.heading = theme.fontWeights[2]
 theme.fontWeights.label = theme.fontWeights[2]
 theme.fontWeights.bold = theme.fontWeights[3]
 
+theme.fontSizes.smallest = theme.fontSizes[0]
 theme.fontSizes.small = theme.fontSizes[1]
 theme.fontSizes.default = theme.fontSizes[2]
 theme.fontSizes.large = theme.fontSizes[3]

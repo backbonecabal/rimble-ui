@@ -1,12 +1,74 @@
-import React from 'react';
-import { Tooltip } from 'rimble-ui'
+import React from 'react'
+import { Tooltip, Box, Text } from 'rimble-ui'
 
 export default {
-  title: 'Tooltip'
+  title: 'Tooltip',
 }
 
 export const tooltip = () => (
-  <Tooltip message="Top tooltip" placement="top">
-    <span>hover over me</span>
-  </Tooltip>
+  <Box m={6}>
+    <Text>Hover (default)</Text>
+    <Box m={3}>
+      <Tooltip title="Tooltip" message="Top tooltip" placement="top">
+        <Box as="span">Hover me</Box>
+      </Tooltip>
+    </Box>
+    <Box m={3}>
+      <Tooltip title="Tooltip" message="Left tooltip" placement="left">
+        <Box as="span">Hover me</Box>
+      </Tooltip>
+    </Box>
+    <Box m={3}>
+      <Tooltip title="Tooltip" message="Right tooltip" placement="right">
+        <Box as="span">Hover me</Box>
+      </Tooltip>
+    </Box>
+    <Box m={3}>
+      <Tooltip title="Tooltip" message="Bottom tooltip" placement="bottom">
+        <Box as="span">Hover me</Box>
+      </Tooltip>
+    </Box>
+
+    <Text>Click</Text>
+    <Box m={3}>
+      <Tooltip
+        title="Tooltip"
+        message="Top tooltip"
+        placement="top"
+        trigger="click"
+      >
+        <Box as="span">Click me</Box>
+      </Tooltip>
+    </Box>
+    <Box m={3}>
+      <Tooltip
+        title="Tooltip"
+        message="Left tooltip"
+        placement="left"
+        trigger="click"
+      >
+        <Box as="span">Click me</Box>
+      </Tooltip>
+    </Box>
+    <Box m={3}>
+      <Tooltip
+        title="Tooltip"
+        message="Right tooltip"
+        placement="right"
+        trigger="click"
+      >
+        <Box as="span">Click me</Box>
+      </Tooltip>
+    </Box>
+    <Box m={3}>
+      <Tooltip
+        title="Tooltip"
+        message="Bottom tooltip"
+        placement="bottom"
+        trigger="click"
+      >
+        <Box as="span">Click me</Box>
+      </Tooltip>
+    </Box>
+  </Box>
 )

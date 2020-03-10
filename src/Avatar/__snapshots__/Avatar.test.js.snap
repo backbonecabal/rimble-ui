@@ -5,7 +5,7 @@ exports[`Avatar component sanity matches default snapshot 1`] = `
   box-sizing: border-box;
   width: 2rem;
   height: 2rem;
-  background-color: #CCC;
+  background-color: #989CA6;
 }
 
 .c1 {
@@ -30,7 +30,7 @@ exports[`Avatar component sanity matches themed snapshot 1`] = `
   box-sizing: border-box;
   width: 2rem;
   height: 2rem;
-  background-color: #CCC;
+  background-color: #989CA6;
 }
 
 .c1 {

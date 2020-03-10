@@ -19,23 +19,25 @@ exports[`File Input component sanity matches default snapshot 1`] = `
 .c2 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
+  width: medium;
+  height: medium;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c2 {
@@ -113,7 +115,7 @@ exports[`File Input component sanity matches default snapshot 1`] = `
 
 .c2 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -122,16 +124,11 @@ exports[`File Input component sanity matches default snapshot 1`] = `
 .c2:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c2:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c2:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c2::before {
@@ -144,8 +141,11 @@ exports[`File Input component sanity matches default snapshot 1`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c2:disabled {
+  background: var(--disabled-color);
 }
 
 .c1 {
@@ -172,11 +172,8 @@ exports[`File Input component sanity matches default snapshot 1`] = `
   />
   <button
     class="c2"
-    color="white"
-    font-family="sansSerif"
     font-size="inherit"
-    font-weight="3"
-    height="3rem"
+    font-weight="bold"
   >
     <div
       class="c3"
@@ -227,23 +224,25 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
 .c2 {
   box-sizing: border-box;
   position: relative;
-  height: 3rem;
-  min-width: 3rem;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 0;
-  padding-bottom: 0;
   font-size: inherit;
-  font-family: "Source Sans Pro",-apple-system,sans-serif;
   font-weight: 600;
   line-height: 1;
-  color: #fff;
-  background-color: #999;
   border: none;
+  width: medium;
+  height: medium;
   border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
-  --main-color: #4E3FCE;
-  --contrast-color: #fff;
+  box-shadow: 0;
+  --main-color: #1A5AFE;
+  --contrast-color: #ffffff;
+  --hover-color: #0041E5;
+  --active-color: #001146;
+  --disabled-color: #8CBCFF;
+  --outline-hover-color: #E5F1FF;
+  --outline-active-color: #B2D2FF;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 48px;
 }
 
 .c2 {
@@ -321,7 +320,7 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
 
 .c2 {
   color: var(--contrast-color);
-  background: #FFF;
+  background: var(--main-color);
   z-index: 0;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
@@ -330,16 +329,11 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
 .c2:hover {
   -webkit-text-decoration: inherit;
   text-decoration: inherit;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-}
-
-.c2:hover::before {
-  opacity: 0.9;
+  background: var(--hover-color);
 }
 
 .c2:active {
-  box-shadow: none;
-  background: #000;
+  background: var(--active-color);
 }
 
 .c2::before {
@@ -352,8 +346,11 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: var(--main-color);
   pointer-events: none;
+}
+
+.c2:disabled {
+  background: var(--disabled-color);
 }
 
 .c1 {
@@ -380,11 +377,8 @@ exports[`File Input component sanity matches themed snapshot 1`] = `
   />
   <button
     class="c2"
-    color="white"
-    font-family="sansSerif"
     font-size="inherit"
-    font-weight="3"
-    height="3rem"
+    font-weight="bold"
   >
     <div
       class="c3"
