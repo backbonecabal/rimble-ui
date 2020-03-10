@@ -32,7 +32,7 @@ export default create({
   // inputTextColor: 'black',
   // inputBorderRadius: 4,
 
-  brandTitle: 'Codefi',
-  brandUrl: '',
-  brandImage: '',
+  // brandTitle: 'Codefi',
+  // brandUrl: '',
+  // brandImage: '',
 })

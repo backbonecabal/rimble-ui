@@ -3,11 +3,9 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { buttonStyle, variant, system } from 'styled-system'
 import { StyledBox } from '../Box'
-import Icon from '../Icon'
 
 const buttonSize = variant({
   prop: 'size',
-  // scale: 'buttonSizes',
   variants: {
     small: {
       fontSize: 'small',
@@ -80,7 +78,6 @@ const StyledButton = styled(StyledBox)`
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    ${'' /* padding: ${props => (props.icononly ? '0' : props.p)}; */}
   }
 
   &:hover {
@@ -88,20 +85,6 @@ const StyledButton = styled(StyledBox)`
   }
 
   &:disabled {
-    opacity: 0.5;
-    pointer-events: none;
-  }
-
-  > span.button-text {
-    display: inline-flex;
-  }
-
-  ${'' /* with icon styles */}
-  > div > svg,
-  > span.button-text {
-    position: relative;
-    z-index: 1;
-    user-select: none;
     pointer-events: none;
   }
 
@@ -133,21 +116,6 @@ const StyledButton = styled(StyledBox)`
 
 StyledButton.defaultProps = {
   as: 'button',
-}
-
-const ButtonBody = ({ children, icon, iconpos }) => {
-  if (icon) {
-    return (
-      <React.Fragment>
-        {icon && !iconpos && <Icon name={icon} />}
-        {icon && iconpos == 'left' && <Icon name={icon} />}
-        {children && <span className="button-text" children={children} />}
-        {icon && iconpos == 'right' && <Icon name={icon} />}
-      </React.Fragment>
-    )
-  } else {
-    return <span className="button-text" children={children} />
-  }
 }
 
 const Button = React.forwardRef((props, ref) => {
@@ -201,23 +169,11 @@ Button.propTypes = {
   /**
    * Sets font and spacing size of button
    */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-  /**
-   * Sets icon of button
-   */
-  icon: PropTypes.string,
-  /**
-   * Sets icon position on button
-   */
-  iconpos: PropTypes.oneOf(['left', 'right']),
-  /**
-   * Sets padding on button with icon and no text
-   */
-  icononly: PropTypes.bool,
+  size: PropTypes.oneOf(['small', 'medium']),
 }
 
 Button.displayName = 'Button'
 
-export { StyledButton, ButtonBody }
+export { StyledButton }
 
 export default Button
