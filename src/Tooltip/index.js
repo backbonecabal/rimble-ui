@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import Popper from '@d8660091/react-popper';
-import { isBrowser } from '../utils';
-import theme from '../theme';
-import Text from '../Text';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import Popper from 'react/react-popper'
+import { isBrowser } from '../utils'
+import theme from '../theme'
+import Text from '../Text'
 
 /**
  * Tooltip display a message near to an anchoring element when the user's mouse hovers or focus is set on anchoring element.
@@ -27,12 +27,12 @@ const StyledTooltip = styled(Text)`
     font-size: 12px;
     z-index: 999999;
   }
-`;
+`
 
 StyledTooltip.defaultProps = {
   theme,
   fontFamily: 'sansSerif',
-};
+}
 
 const Tooltip = ({ children, ...props }) => {
   const options = {
@@ -42,15 +42,15 @@ const Tooltip = ({ children, ...props }) => {
         offset: props.offset,
       },
     },
-  };
+  }
 
   const triggerElement = ({ setReference, toggle }) => {
     return React.cloneElement(children, {
       ref: setReference,
       onMouseEnter: toggle,
       onMouseLeave: toggle,
-    });
-  };
+    })
+  }
 
   if (isBrowser()) {
     return (
@@ -61,20 +61,20 @@ const Tooltip = ({ children, ...props }) => {
       >
         <StyledTooltip variant={props.variant} children={props.message} />
       </Popper>
-    );
+    )
   } else {
-    return children;
+    return children
   }
-};
+}
 
-Tooltip.displayName = 'Tooltip';
+Tooltip.displayName = 'Tooltip'
 
 Tooltip.defaultProps = {
   variant: 'dark',
   placement: 'bottom',
   offset: '0, 0',
   message: 'props.message text',
-};
+}
 
 Tooltip.propTypes = {
   /** Sets the theme of tooltip. Options are light or dark. */
@@ -85,6 +85,6 @@ Tooltip.propTypes = {
   offset: PropTypes.string,
   /** Sets the content of tooltip. Only accepts text and not markup. */
   message: PropTypes.string,
-};
+}
 
-export default Tooltip;
+export default Tooltip
