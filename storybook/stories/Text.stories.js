@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from 'rimble-ui';
+import { Text } from 'yearn-design';
 
 export default {
   title: 'Text'

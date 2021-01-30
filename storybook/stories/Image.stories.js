@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'rimble-ui'
+import { Image } from 'yearn-design'
 
 export default {
   title: 'Image'

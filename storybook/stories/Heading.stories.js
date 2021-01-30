@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading } from 'rimble-ui';
+import { Heading } from 'yearn-design';
 
 export default {
   title: 'Heading',

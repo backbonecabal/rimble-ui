@@ -1,15 +1,22 @@
-# Codefi components
+# yearn-design
 
 > Codefi Design System&#x27;s react component library.
 
-React components, built with styled-components and styled-system.
+[![NPM](https://img.shields.io/npm/v/yearn-design.svg)](https://www.npmjs.com/package/yearn-design)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Travis Build Status](https://travis-ci.com/ConsenSys/yearn-design.svg?branch=master)](https://travis-ci.com/ConsenSys/yearn-design)
+[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/rimble)
+
+Rimble is a project from ConsenSys Design, aiming to provide adaptable components and design standards for decentralized applications (dApps). Our goal is simply to make it easier to build dApps with outstanding user experience. If you're interested, we have written a bit more about [our rationale and approach to building Rimble](https://blog.prototypr.io/this-is-rimble-d0f1ad26b8b6).
+
+Rimble is in initial development and should not be considered stable today. We have made the project public in a very early stage of work in order to gather feedback from the community of designers and developers building dApps.
 
 We are actively working on adding new components to Rimble and will be sharing more information on the roadmap very soon.
 
 ## Install
 
 ```bash
-npm install --save @codefi-ds/core styled-components
+npm install --save yearn-design styled-components
 ```
 
 ## Usage
@@ -17,7 +24,7 @@ npm install --save @codefi-ds/core styled-components
 ```jsx
 import React, { Component } from 'react'
 
-import { Button } from '@codefi-ds/core'
+import { Button } from 'yearn-design'
 
 class Example extends Component {
   render() {

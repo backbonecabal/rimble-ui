@@ -1,5 +1,5 @@
 import React from 'react';
-import { Checkbox } from 'rimble-ui'
+import { Checkbox } from 'yearn-design'
 
 export default {
   title: 'Checkbox'

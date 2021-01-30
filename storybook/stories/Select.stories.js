@@ -1,5 +1,5 @@
 import React from 'react';
-import { Select } from 'rimble-ui'
+import { Select } from 'yearn-design'
 
 export default {
   title: 'Select'

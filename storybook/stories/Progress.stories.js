@@ -1,5 +1,5 @@
 import React from 'react';
-import { Progress } from 'rimble-ui'
+import { Progress } from 'yearn-design'
 
 export default {
   title: 'Progress'

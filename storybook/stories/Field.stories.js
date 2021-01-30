@@ -1,5 +1,5 @@
-import React from 'react'
-import { Field, Input, Box } from 'rimble-ui'
+import React from 'react';
+import { Field, Input } from 'yearn-design'
 
 export default {
   title: 'Field',

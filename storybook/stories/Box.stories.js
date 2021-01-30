@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex } from 'rimble-ui'
+import { Box, Flex } from 'yearn-design'
 
 export default {
   title: 'Layout'

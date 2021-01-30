@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pill, Box } from 'rimble-ui';
+import { Pill, Box } from 'yearn-design';
 
 export default {
   title: 'Pill'

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon, Tooltip } from 'rimble-ui'
+import { Icon, Tooltip } from 'yearn-design'
 
 export default {
   title: 'Icon'

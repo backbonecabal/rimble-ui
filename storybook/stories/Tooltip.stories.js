@@ -1,5 +1,5 @@
-import React from 'react'
-import { Tooltip, Box, Text } from 'rimble-ui'
+import React from 'react';
+import { Tooltip } from 'yearn-design'
 
 export default {
   title: 'Tooltip',

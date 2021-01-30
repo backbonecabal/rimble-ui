@@ -34,7 +34,7 @@ import {
   BaseStyles,
   ThemeProvider,
   theme,
-} from 'rimble-ui'
+} from 'yearn-design'
 
 import { Eth, Btc } from '@rimble/icons'
 
@@ -155,7 +155,7 @@ const testComponents = props => (
     <Input placeholder={'placeholder'} />
 
     <Box>
-      <Text>Icon component from rimble-ui</Text>
+      <Text>Icon component from yearn-design</Text>
       <Icon name={'Info'} />
       <Icon name={'Eth'} />
       <Icon name={'Btc'} />
@@ -163,14 +163,14 @@ const testComponents = props => (
 
     <Box>
       <Text>
-        Icon component from rimble-ui using "primary" color from theme
+        Icon component from yearn-design using "primary" color from theme
       </Text>
       <Icon name={'Info'} color="primary" />
       <Icon name={'Eth'} color="primary" />
       <Icon name={'Btc'} color="primary" />
     </Box>
     <Box>
-      <Text>Icon component from rimble-ui, color="green"</Text>
+      <Text>Icon component from yearn-design, color="green"</Text>
       <Icon name={'Info'} color="green" />
       <Icon name={'Eth'} color="green" />
       <Icon name={'Btc'} color="green" />

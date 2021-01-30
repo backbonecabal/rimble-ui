@@ -1,11 +1,11 @@
 {
-  "name": "rimble-ui",
+  "name": "yearn-design",
   "version": "0.14.0",
   "description": "Rimble Design System react component library.",
   "author": "ConsenSys Design",
   "homepage": "https://rimble.consensys.design/",
   "license": "MIT",
-  "repository": "ConsenSys/rimble-ui",
+  "repository": "ConsenSys/yearn-design",
   "main": "dist/index.umd.js",
   "module": "dist/es/index.js",
   "sideEffects": false,

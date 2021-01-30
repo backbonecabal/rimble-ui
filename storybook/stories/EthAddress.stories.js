@@ -1,5 +1,5 @@
 import React from 'react';
-import { EthAddress } from 'rimble-ui'
+import { EthAddress } from 'yearn-design'
 
 export default {
   title: 'EthAddress'

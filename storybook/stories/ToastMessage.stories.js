@@ -1,5 +1,5 @@
 import React from 'react';
-import { ToastMessage } from 'rimble-ui'
+import { ToastMessage } from 'yearn-design'
 
 export default {
   title: 'ToastMessage'

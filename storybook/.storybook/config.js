@@ -2,7 +2,7 @@ import React from 'react';
 import { configure, addParameters, addDecorator } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { withA11y } from '@storybook/addon-a11y';
-import { ThemeProvider, BaseStyles } from 'rimble-ui'
+import { ThemeProvider, BaseStyles } from 'yearn-design'
 import rimbleTheme from './rimbleTheme';
 
 addParameters({

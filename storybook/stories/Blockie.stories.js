@@ -1,5 +1,5 @@
 import React from 'react';
-import { Blockie } from 'rimble-ui'
+import { Blockie } from 'yearn-design'
 
 export default {
   title: 'Blockie'

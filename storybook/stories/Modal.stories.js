@@ -7,7 +7,7 @@ import {
   Button,
   Text,
   Heading
-} from 'rimble-ui'
+} from 'yearn-design'
 
 export default {
   title: 'Modal'

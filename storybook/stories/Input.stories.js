@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input } from 'rimble-ui'
+import { Input } from 'yearn-design'
 
 export default {
   title: 'Input'

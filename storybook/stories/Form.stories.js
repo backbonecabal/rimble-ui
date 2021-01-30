@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Button, Card } from 'rimble-ui'
+import { Form, Button, Card } from 'yearn-design'
 
 export default {
   title: 'Form'

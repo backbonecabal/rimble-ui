@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'rimble-ui'
+import { Card } from 'yearn-design'
 
 export default {
   title: 'Card'

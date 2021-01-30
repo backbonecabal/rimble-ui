@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from 'rimble-ui'
+import { Table } from 'yearn-design'
 
 export default {
   title: 'Table'

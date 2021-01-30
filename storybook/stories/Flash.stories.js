@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flash } from 'rimble-ui'
+import { Flash } from 'yearn-design'
 
 export default {
   title: 'Flash'

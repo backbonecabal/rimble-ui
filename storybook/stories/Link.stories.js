@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'rimble-ui'
+import { Link } from 'yearn-design'
 
 export default {
   title: 'Link'

@@ -1,5 +1,5 @@
 import React from 'react';
-import { QR } from 'rimble-ui'
+import { QR } from 'yearn-design'
 
 export default {
   title: 'QR Code'

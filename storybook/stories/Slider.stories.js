@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Slider, Text,  } from 'rimble-ui';
+import { Slider, Text,  } from 'yearn-design';
 
 export default {
   title: 'Slider'

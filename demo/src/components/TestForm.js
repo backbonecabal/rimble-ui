@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Button } from 'rimble-ui';
+import { Form, Button } from 'yearn-design';
 
 class TestForm extends Component {
   constructor(props) {

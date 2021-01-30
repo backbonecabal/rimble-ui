@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar } from 'rimble-ui'
+import { Avatar } from 'yearn-design'
 
 export default {
   title: 'Avatar'

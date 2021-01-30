@@ -1,5 +1,5 @@
 import React from 'react';
-import { Radio } from 'rimble-ui'
+import { Radio } from 'yearn-design'
 
 export default {
   title: 'Radio'

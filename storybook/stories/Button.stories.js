@@ -1,5 +1,5 @@
-import React from 'react'
-import { Button, MetaMaskButton, UPortButton, Box } from 'rimble-ui'
+import React from 'react';
+import { Button, MetaMaskButton, UPortButton } from 'yearn-design'
 
 export default {
   title: 'Buttons',

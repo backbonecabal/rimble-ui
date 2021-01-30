@@ -6,7 +6,7 @@
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "3.1.2",
-    "rimble-ui": "link:..",
+    "yearn-design": "link:..",
     "source-map-explorer": "^2.1.2"
   },
   "scripts": {

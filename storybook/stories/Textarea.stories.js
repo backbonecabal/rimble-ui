@@ -1,5 +1,5 @@
 import React from 'react';
-import { Textarea } from 'rimble-ui'
+import { Textarea } from 'yearn-design'
 
 export default {
   title: 'Textarea'
