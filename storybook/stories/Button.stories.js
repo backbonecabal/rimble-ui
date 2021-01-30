@@ -102,7 +102,13 @@ export const metaMaskOutline = () => (
 )
 
 export const uPortSolid = () => (
-  <UPortButton.Solid>Connect with uPort</UPortButton.Solid>
+  <UPortButton.Solid>
+    Connect with Yearn
+  </UPortButton.Solid>
 )
 
-export const uPortOutline = () => <UPortButton>Connect with uPort</UPortButton>
+export const uPortOutline = () => (
+  <UPortButton>
+    Connect with Yearn
+  </UPortButton>
+)

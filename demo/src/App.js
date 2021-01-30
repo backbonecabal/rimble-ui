@@ -329,8 +329,8 @@ const testComponents = props => (
     <Image src="https://source.unsplash.com/random/1280x720" />
     <MetaMaskButton>Connect with MetaMask</MetaMaskButton>
     <MetaMaskButton.Outline>Connect with MetaMask</MetaMaskButton.Outline>
-    <UPortButton>Connect with uPort</UPortButton>
-    <UPortButton.Solid>Connect with uPort</UPortButton.Solid>
+    <UPortButton>Connect with Yearn</UPortButton>
+    <UPortButton.Solid>Connect with Yearn</UPortButton.Solid>
     <Loader />
     <QR value="test" />
     <Modal />
