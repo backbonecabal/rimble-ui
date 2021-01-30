@@ -1,19 +1,17 @@
-import baseColors, { blurple, blue, green, yellow, red } from './yearn-colors'
+import baseColors, { yearnblue, blue, green, yellow, red } from './yearn-colors'
 
 // colors
 const colors = {
-  // need to remove all of these?
-  // Refactor these out and update reference to new color values.
-  text: baseColors.base900,
-  background: brandColors.white,
-  primary: primaryColors.primary700,
-  'primary-light': primaryColors.primary500,
-  'primary-dark': primaryColors.primary900,
-  blue: brandColors.blue,
-  black: baseColors.base900,
-  'near-black': baseColors.base800,
-  'dark-gray': baseColors.base700,
-  'mid-gray': baseColors.base600,
+  text: '#3F3D4B',
+  background: '#fff',
+  primary: yearnblue.base,
+  'primary-light': yearnblue.light[1],
+  'primary-dark': yearnblue.dark[1],
+  blue: baseColors.consensysblue,
+  black: '#000',
+  'near-black': '#111',
+  'dark-gray': '#333',
+  'mid-gray': '#555',
   // maybe we don't need 'grey' here
   grey: baseColors.base500,
   silver: baseColors.base400,
@@ -122,35 +120,22 @@ const theme = {
       borderColor: blue.base,
     },
   },
-}
-
-// ALIASES - use theme indexes as much as possible when defining aliases
-// Use aliases as much as possible
-theme.fontWeights.body = theme.fontWeights[1]
-theme.fontWeights.heading = theme.fontWeights[2]
-theme.fontWeights.label = theme.fontWeights[2]
-theme.fontWeights.bold = theme.fontWeights[3]
-
-theme.fontSizes.smallest = theme.fontSizes[0]
-theme.fontSizes.small = theme.fontSizes[1]
-theme.fontSizes.default = theme.fontSizes[2]
-// theme.fontSizes.large = theme.fontSizes[4]
-
-theme.buttons = {
-  primary: {
-    // fontWeight: theme.fontWeights.bold,
-    // color: baseColors.white, // are these not used anymore?
-    // backgroundColor: primaryColors.primary700, // are these not used anymore?
-    // use css custom props
-    '--main-color': theme.colors.primary700, // I don't really love the way we need to type the same name, colors, and name again when using color values. Is there a shorter way?
-    // It is nice to be able to shortcut to "primary800" when using the color as a prop value via SS - but here the names feel repetitive
-    // Kick the can down the road on color name grouping?
-    '--contrast-color': brandColors.white,
-    '--hover-color': primaryColors.primary800, // added explicit definitions for all these state values.
-    '--active-color': primaryColors.primary900,
-    '--disabled-color': primaryColors.primary400,
-    '--outline-hover-color': primaryColors.primary200,
-    '--outline-active-color': primaryColors.primary300,
+  buttons: {
+    primary: {
+      color: yearnblue.text,
+      backgroundColor: yearnblue.base,
+      // use css custom props
+      '--main-color': yearnblue.base,
+      '--contrast-color': yearnblue.text,
+    },
+    success: {
+      '--main-color': green.base,
+      '--contrast-color': green.text,
+    },
+    danger: {
+      '--main-color': red.base,
+      '--contrast-color': red.text,
+    },
   },
   base: {
     // use css custom props
