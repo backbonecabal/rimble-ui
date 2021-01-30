@@ -1,24 +1,22 @@
 import { tint, shade, readableColor } from 'polished'
 
-// rimble base colors
 const baseColors = {
-  black: '#000A28', // need to refactor
-  white: '#FFF', // ok
-  blue: '#1A5AFE', // need to refactor
-  green: '#008055', // need to refactor - using success700
-  yellow: '#D9992B', // need to refactor - using warning600
-  red: '#B20000', // need to refactor - using error700
-  blurple: '#1A5AFE', // need to refactor - using primary500
-  consensysblue: '#3259D6', // need to remove
+  black: '#000',
+  white: '#FFF',
+  blue: '#0657F9',
+  green: '#28C081',
+  yellow: '#FABF06',
+  red: '#EF1E02',
+  yearnblue: '#0657F9',
+  prussianblue: '#3259D6',
 }
 
-// rimble palette
 const colors = {
-  blurple: {
-    base: baseColors.blurple,
-    text: readableColor(baseColors.blurple),
-    light: [null, tint(0.2, baseColors.blurple)],
-    dark: [null, shade(0.2, baseColors.blurple)],
+  yearnblue: {
+    base: baseColors.yearnblue,
+    text: readableColor(baseColors.yearnblue),
+    light: [null, tint(0.2, baseColors.yearnblue)],
+    dark: [null, shade(0.2, baseColors.yearnblue)],
   },
   blue: {
     base: baseColors.blue,
@@ -46,13 +44,13 @@ const colors = {
   },
 }
 
-const blurple = colors.blurple
+const yearnblue = colors.yearnblue
 const blue = colors.blue
 const green = colors.green
 const yellow = colors.yellow
 const red = colors.red
 
-export { blurple }
+export { yearnblue }
 export { blue }
 export { green }
 export { yellow }
