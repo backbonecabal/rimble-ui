@@ -66,6 +66,7 @@
     "@babel/plugin-syntax-import-meta": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@svgr/webpack": "^5.5.0",
     "babel-plugin-inline-react-svg": "^1.1.0",
     "babel-plugin-styled-components": "^1.10.6",
     "cross-env": "^5.1.4",
@@ -93,7 +94,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-url": "^2.2.2",
-    "styled-components": "^4.4.1"
+    "styled-components": "^5.2.1"
   },
   "files": [
     "dist"
