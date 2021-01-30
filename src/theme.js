@@ -7,7 +7,7 @@ const colors = {
   primary: yearnblue.base,
   'primary-light': yearnblue.light[1],
   'primary-dark': yearnblue.dark[1],
-  blue: baseColors.consensysblue,
+  blue: baseColors.prussianblue,
   black: '#000',
   'near-black': '#111',
   'dark-gray': '#333',
