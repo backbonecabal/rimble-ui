@@ -7,7 +7,7 @@ var baseColors = {
   green: '#28C081',
   yellow: '#FD9D28',
   red: '#DC2C10',
-  blurple: '#4E3FCE',
+  blurple: '#0657F9',
   consensysblue: '#3259D6'
 }; // rimble palette
 

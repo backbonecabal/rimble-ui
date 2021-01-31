@@ -7,7 +7,7 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".1"
   }), React.createElement("rect", {
     x: "30",
@@ -15,11 +15,11 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".1"
   }), React.createElement("path", {
     d: "M10 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V1z",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".5"
   }), React.createElement("rect", {
     x: "20",
@@ -27,7 +27,7 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".5"
   }), React.createElement("rect", {
     x: "20",
@@ -35,7 +35,7 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".5"
   }), React.createElement("rect", {
     x: "10",
@@ -43,21 +43,21 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".5"
   }), React.createElement("rect", {
     y: "15",
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".7"
   }), React.createElement("rect", {
     x: "30",
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".1"
   }), React.createElement("rect", {
     x: "30",
@@ -65,7 +65,7 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".1"
   }), React.createElement("rect", {
     x: "30",
@@ -73,7 +73,7 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".7"
   }), React.createElement("rect", {
     x: "10",
@@ -81,7 +81,7 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".9"
   }), React.createElement("rect", {
     x: "20",
@@ -89,7 +89,7 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".9"
   }));
 };

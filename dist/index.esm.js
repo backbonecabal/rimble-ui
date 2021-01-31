@@ -1218,7 +1218,7 @@ var baseColors = {
   green: '#28C081',
   yellow: '#FD9D28',
   red: '#DC2C10',
-  blurple: '#4E3FCE',
+  blurple: '#0657F9',
   consensysblue: '#3259D6'
 }; // rimble palette
 
@@ -42717,7 +42717,7 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".1"
   }), React__default.createElement("rect", {
     x: "30",
@@ -42725,11 +42725,11 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".1"
   }), React__default.createElement("path", {
     d: "M10 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V1z",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".5"
   }), React__default.createElement("rect", {
     x: "20",
@@ -42737,7 +42737,7 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".5"
   }), React__default.createElement("rect", {
     x: "20",
@@ -42745,7 +42745,7 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".5"
   }), React__default.createElement("rect", {
     x: "10",
@@ -42753,21 +42753,21 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".5"
   }), React__default.createElement("rect", {
     y: "15",
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".7"
   }), React__default.createElement("rect", {
     x: "30",
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".1"
   }), React__default.createElement("rect", {
     x: "30",
@@ -42775,7 +42775,7 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".1"
   }), React__default.createElement("rect", {
     x: "30",
@@ -42783,7 +42783,7 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".7"
   }), React__default.createElement("rect", {
     x: "10",
@@ -42791,7 +42791,7 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".9"
   }), React__default.createElement("rect", {
     x: "20",
@@ -42799,7 +42799,7 @@ var IconProcessing = function IconProcessing(props) {
     width: "6",
     height: "6",
     rx: "1",
-    fill: "#4E3FCE",
+    fill: "#0657F9",
     fillOpacity: ".9"
   }));
 };
