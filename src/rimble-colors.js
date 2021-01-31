@@ -1,16 +1,16 @@
-import { tint, shade, readableColor } from 'polished';
+import { tint, shade, readableColor } from 'polished'
 
 // rimble base colors
 const baseColors = {
   black: '#000',
   white: '#FFF',
-  blue: '#36ADF1',
+  blue: '#0657F9',
   green: '#28C081',
-  yellow: '#FD9D28',
-  red: '#DC2C10',
-  blurple: '#4E3FCE',
+  yellow: '#FABF06',
+  red: '#EF1E02',
+  blurple: '#0657F9',
   consensysblue: '#3259D6',
-};
+}
 
 // rimble palette
 const colors = {
@@ -44,18 +44,18 @@ const colors = {
     light: [null, tint(0.9, baseColors.red)],
     dark: [null, shade(0.4, baseColors.red)],
   },
-};
+}
 
-const blurple = colors.blurple;
-const blue = colors.blue;
-const green = colors.green;
-const yellow = colors.yellow;
-const red = colors.red;
+const blurple = colors.blurple
+const blue = colors.blue
+const green = colors.green
+const yellow = colors.yellow
+const red = colors.red
 
-export { blurple };
-export { blue };
-export { green };
-export { yellow };
-export { red };
+export { blurple }
+export { blue }
+export { green }
+export { yellow }
+export { red }
 
-export default baseColors;
+export default baseColors
