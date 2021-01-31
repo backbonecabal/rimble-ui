@@ -57,7 +57,7 @@ exports[`Field component sanity matches default snapshot 1`] = `
 
 .c3:focus {
   outline: none;
-  border-color: #4E3FCE;
+  border-color: #0657F9;
 }
 
 .c3:disabled {
@@ -113,12 +113,12 @@ exports[`Field component sanity matches default snapshot 1`] = `
 }
 
 .was-validated .c3:invalid {
-  border-color: #DC2C10;
+  border-color: #EF1E02;
 }
 
 .was-validated .c3:invalid ~ svg.icon-invalid {
   visibility: visible;
-  color: #DC2C10;
+  color: #EF1E02;
 }
 
 <label
@@ -198,7 +198,7 @@ exports[`Field component sanity matches themed snapshot 1`] = `
 
 .c3:focus {
   outline: none;
-  border-color: #4E3FCE;
+  border-color: #0657F9;
 }
 
 .c3:disabled {
@@ -254,12 +254,12 @@ exports[`Field component sanity matches themed snapshot 1`] = `
 }
 
 .was-validated .c3:invalid {
-  border-color: #DC2C10;
+  border-color: #EF1E02;
 }
 
 .was-validated .c3:invalid ~ svg.icon-invalid {
   visibility: visible;
-  color: #DC2C10;
+  color: #EF1E02;
 }
 
 <label

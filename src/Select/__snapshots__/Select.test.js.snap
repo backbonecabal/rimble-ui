@@ -55,12 +55,12 @@ exports[`Select component sanity matches default snapshot 1`] = `
         "buttons": Object {
           "danger": Object {
             "--contrast-color": "#fff",
-            "--main-color": "#DC2C10",
+            "--main-color": "#EF1E02",
           },
           "primary": Object {
             "--contrast-color": "#fff",
-            "--main-color": "#4E3FCE",
-            "backgroundColor": "#4E3FCE",
+            "--main-color": "#0657F9",
+            "backgroundColor": "#0657F9",
             "color": "#fff",
           },
           "success": Object {
@@ -86,24 +86,24 @@ exports[`Select component sanity matches default snapshot 1`] = `
             "rgba(0,0,0,.9)",
           ],
           "blue": "#3259D6",
-          "danger": "#DC2C10",
+          "danger": "#EF1E02",
           "dark-gray": "#333",
           "grey": "#CCC",
-          "info": "#36ADF1",
+          "info": "#0657F9",
           "light-gray": "#eee",
           "light-silver": "#aaa",
           "mid-gray": "#555",
           "moon-gray": "#ccc",
           "near-black": "#111",
           "near-white": "#f4f4f4",
-          "primary": "#4E3FCE",
+          "primary": "#0657F9",
           "primary-dark": "#3e32a4",
           "primary-light": "#7165d7",
           "silver": "#999",
           "success": "#28C081",
           "text": "#3F3D4B",
           "transparent": "transparent",
-          "warning": "#FD9D28",
+          "warning": "#FABF06",
           "white": "#fff",
           "whites": Array [
             "rgba(255,255,255,.0125)",
@@ -162,12 +162,12 @@ exports[`Select component sanity matches default snapshot 1`] = `
           },
           "danger": Object {
             "backgroundColor": "#fbe9e7",
-            "borderColor": "#DC2C10",
+            "borderColor": "#EF1E02",
             "color": "#841a09",
           },
           "info": Object {
             "backgroundColor": "#eaf6fd",
-            "borderColor": "#36ADF1",
+            "borderColor": "#0657F9",
             "color": "#206790",
           },
           "success": Object {
@@ -177,7 +177,7 @@ exports[`Select component sanity matches default snapshot 1`] = `
           },
           "warning": Object {
             "backgroundColor": "#fef5e9",
-            "borderColor": "#FD9D28",
+            "borderColor": "#FABF06",
             "color": "#975e18",
           },
         },

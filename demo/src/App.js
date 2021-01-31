@@ -195,7 +195,7 @@ const testComponents = props => (
         bgcolor: '#a71',
         size: 16,
         scale: 3,
-        spotcolor: '#4E3FCE',
+        spotcolor: '#0657F9',
       }}
     />
     <Avatar src={'https://source.unsplash.com/128x128/?people,face,portrait'} />
