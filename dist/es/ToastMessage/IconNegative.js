@@ -13,7 +13,7 @@ var NegativeIcon = function NegativeIcon(props) {
     fillRule: "evenodd",
     clipRule: "evenodd",
     d: "M18 15a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-6a1 1 0 0 0-1-1zm-1 10.333a1 1 0 1 1 2 0 1 1 0 0 1-2 0z",
-    fill: "#DC2C10"
+    fill: "#EF1E02"
   }));
 };
 

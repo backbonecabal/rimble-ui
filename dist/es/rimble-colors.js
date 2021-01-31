@@ -3,10 +3,10 @@ import { tint, shade, readableColor } from 'polished'; // rimble base colors
 var baseColors = {
   black: '#000',
   white: '#FFF',
-  blue: '#36ADF1',
+  blue: '#0657F9',
   green: '#28C081',
-  yellow: '#FD9D28',
-  red: '#DC2C10',
+  yellow: '#FABF06',
+  red: '#EF1E02',
   blurple: '#0657F9',
   consensysblue: '#3259D6'
 }; // rimble palette
